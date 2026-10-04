@@ -99,6 +99,10 @@ func (e Env) Install(it catalog.Item, s Scope) ([]string, error) {
 	var log []string
 	for _, b := range it.Binaries {
 		dest := filepath.Join(e.BinDir(), b)
+		// go build refuses to overwrite a non-binary (e.g. a legacy script).
+		if err := os.Remove(dest); err != nil && !os.IsNotExist(err) {
+			return log, err
+		}
 		cmd := exec.Command("go", "build", "-o", dest, "./cmd/"+b)
 		cmd.Dir = e.RepoRoot
 		if out, err := cmd.CombinedOutput(); err != nil {
