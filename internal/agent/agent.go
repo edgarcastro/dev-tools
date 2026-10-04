@@ -77,7 +77,7 @@ func DefaultBase() string {
 // Sessions lists active agent sessions.
 func Sessions() []Session {
 	out, err := run("", "tmux", "list-sessions", "-F",
-		"#{session_name}|#{session_windows}|#{session_created_string}")
+		"#{session_name}|#{session_windows}|#{t:session_created}")
 	if err != nil {
 		return nil
 	}
