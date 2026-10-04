@@ -1,4 +1,4 @@
-module github.com/ecastro/dev-tools
+module github.com/edgarcastro/dev-tools
 
 go 1.27.1
 

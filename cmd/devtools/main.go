@@ -12,9 +12,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ecastro/dev-tools/internal/catalog"
-	"github.com/ecastro/dev-tools/internal/installer"
-	"github.com/ecastro/dev-tools/internal/tui"
+	"github.com/edgarcastro/dev-tools/internal/catalog"
+	"github.com/edgarcastro/dev-tools/internal/installer"
+	"github.com/edgarcastro/dev-tools/internal/tui"
 )
 
 func main() {

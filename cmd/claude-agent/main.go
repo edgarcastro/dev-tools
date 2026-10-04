@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ecastro/dev-tools/internal/agent"
-	"github.com/ecastro/dev-tools/internal/tui"
+	"github.com/edgarcastro/dev-tools/internal/agent"
+	"github.com/edgarcastro/dev-tools/internal/tui"
 )
 
 const usage = `Usage: claude-agent <command>

@@ -8,7 +8,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/ecastro/dev-tools/internal/envguard"
+	"github.com/edgarcastro/dev-tools/internal/envguard"
 )
 
 func main() {

@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ecastro/dev-tools/internal/catalog"
+	"github.com/edgarcastro/dev-tools/internal/catalog"
 )
 
 // Scope selects which settings file receives hook entries.
@@ -20,7 +20,7 @@ const (
 	Project Scope = "project" // <cwd>/.claude/settings.local.json (holds an absolute path, so not committed)
 )
 
-const modulePath = "github.com/ecastro/dev-tools"
+const modulePath = "github.com/edgarcastro/dev-tools"
 
 // Env holds the locations the installer works with (overridable in tests).
 type Env struct {
